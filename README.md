@@ -13,4 +13,6 @@ From here, you can start painting on the `Tilemap` layer in your **Hierarchy**. 
 > Under `Tilemap Renderer` you'll find "Order in Layer". Use this to arrange your layers, the higher number shows up over the other tiles, which is needed for overlapping sprites and stuff.
 
 ## DL2 (13/12/25) Gridded Movement + Point & Click Controls
-> TBU
+I followed a convoluted tutorial that had me typing over 300 lines across 5 different scripts, none of which I understand too well. What I **do** understand is that AStarGrid (as used in Godot) is not present in Unity, and has to be programmed from scratch. AStarGrid is a pathfinding algorithm, which detects obstacles and tries to find the faster path from the `startingPosition` to the `targetPosition`. I'm unsure if it's down to how my tilemaps are set up or my lack of understanding of how prefabs work, but currently my character moves across all tiles regardless of collision. Because my character is taller than the 128 grid boxes, I think the code doesn't fully grasp which part of him is meant to be standing in the cell.
+
+I'll see if I can retry this with a simpler tutorial. I despise that I roughly understand what's going on, but not how it all works, because it means I can't reverse engineer it to my own specifications just yet.
