@@ -42,3 +42,13 @@ public class Node : MonoBehaviour
 I've noticed there are different ways to make gridded movement, so far I've tried one using Tilemaps and Colliders, and another using Nodes and Lists of Connections. For what it's worth, the former may not need colliders since there's no health or projectiles to warrant a hit-box- actually, it *may* be necessary if I'm involving Demon Hunters/Exorcists as enemies.
 
 Either way, today has proven unsuccessful in getting movement to work. Given how much easier it was in Godot, I have to question the switch... it is frustrating to not be able to figure it out myself. All the tutorials for Unity do not use it the same way I want to, and attempting to splice tutorials never works out.
+
+## DL4 (18/12/25) Post-Appointment Restructure
+(Technically done yesterday) I had an appointment with David to figure out how to get the movement working. He suggested moving away from the gridded movement for now and opting to use NavMesh for AI pathfinding. So far it's working fine on both Unity 6 and Unity 2022 (though I have issues when importing them over).
+
+There are a few things I'd need to iron out:
+1. The employees with block and collide into each other - need to allow them to pass through each other.
+2. The acceleration and pathfinding is a little floaty for my liking; they take wide turns around corners.
+3. When clicking multiple areas, the idle employee will change course and go to the most recent target.
+4. Currently, clicking anywhere on the map will not get the employees to move; only when ordered to interact with something
+5. We were in the middle of figuring out how to set up the Store Manager so that the employees have a hierarchy of who can go to which tasks, updating their status as they move
