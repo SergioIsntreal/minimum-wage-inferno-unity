@@ -52,3 +52,17 @@ There are a few things I'd need to iron out:
 3. When clicking multiple areas, the idle employee will change course and go to the most recent target.
 4. Currently, clicking anywhere on the map will not get the employees to move; only when ordered to interact with something
 5. We were in the middle of figuring out how to set up the Store Manager so that the employees have a hierarchy of who can go to which tasks, updating their status as they move
+
+## DL5 (19/12/25) Cont.
+- To disable collision between NavMesh Agents, set `Obstacle Avoidance Quality` to `None`
+- Currently the employees are moving towards the clicked object rather than the navPoint. This has something to do with the StoreManager script, but my attempts to add the navPoint only result in nobody moving, or only one moving despite all of them being Idle.
+
+<img width="368" height="190" alt="image" src="https://github.com/user-attachments/assets/4394dab7-2dd6-4be8-ac29-334d786760cc" />
+
+<img width="529" height="596" alt="image" src="https://github.com/user-attachments/assets/a3f86b0c-8bfc-40b9-b210-63bb31c3fa83" />
+
+- Need to find a method of switching the employees status as and when they're moving.
+- Still need to create a hierarchy that allows one employee to move at a time.
+
+For now, since I won't be seeing anyone for a few weeks, it may be best to either focus on the art direction for the time being, or try to program the menus and maybe a VN Cutscene. We'll see.
+
