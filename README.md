@@ -66,3 +66,8 @@ There are a few things I'd need to iron out:
 
 For now, since I won't be seeing anyone for a few weeks, it may be best to either focus on the art direction for the time being, or try to program the menus and maybe a VN Cutscene. We'll see.
 
+## DL6 (21/12/25) Cont.
+I'll attempt some of the following:
+- Implementing a countdown timer to my game
+- Creating a VN Cutscene
+- Creating a functional Main Menu
