@@ -66,8 +66,6 @@ There are a few things I'd need to iron out:
 
 For now, since I won't be seeing anyone for a few weeks, it may be best to either focus on the art direction for the time being, or try to program the menus and maybe a VN Cutscene. We'll see.
 
-## DL6 (21/12/25) Cont.
-I'll attempt some of the following:
-- Implementing a countdown timer to my game
-- Creating a VN Cutscene
-- Creating a functional Main Menu
+## DL6 (03/01/26) Timer & Customer Spawn Rate
+I've managed to implement a visual timer where every second equates to 5 in-game minutes, and once it reaches 6pm it changes to say 'Closed'.
+I've also implemented a random spawn rate for customers (will need to play with the randomised range to see what works for an easier or harder difficulty), though this may need to be adjusted when I have a list of different types of customers (single, couple or groups, for instance). I'm not sure how to change where they spawn (or if it matters) and how to program their movement between set locations, as their first instinct will be to occupy the nearest available chair to the door, and after being served at a table will make their way to the till, before leaving through the door. This only means they'll have 3 points to walk towards when they are moving. Tomorrow we'll try to implement the VN code, since I'd rather consult David on how to proceed with fixing my employee code, and how to go about the customer code.
