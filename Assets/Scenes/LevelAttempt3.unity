@@ -372,7 +372,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 42944837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -540,9 +540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &52528325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1212,7 +1209,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 191218869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -1517,7 +1514,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1530,7 +1527,7 @@ Transform:
   m_GameObject: {fileID: 201316659}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2105,9 +2102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &381445446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2263,11 +2257,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 440208427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73e6adb4ada8af4c944bbdfabbe90e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4125dfb7808894797be73266aed14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  target: {fileID: 440208429}
+  target: {fileID: 0}
   status: 0
 --- !u!4 &440208429
 Transform:
@@ -2515,7 +2509,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2528,7 +2522,7 @@ Transform:
   m_GameObject: {fileID: 487593608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2625,7 +2619,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 494415112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -3127,9 +3121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &558668146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3615,7 +3606,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3628,7 +3619,7 @@ Transform:
   m_GameObject: {fileID: 728826521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4050,11 +4041,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 792833624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73e6adb4ada8af4c944bbdfabbe90e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4125dfb7808894797be73266aed14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  target: {fileID: 792833625}
+  target: {fileID: 0}
   status: 0
 --- !u!50 &792833630
 Rigidbody2D:
@@ -4851,9 +4842,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &1058623217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5201,7 +5189,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(1)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5214,7 +5202,7 @@ Transform:
   m_GameObject: {fileID: 1154978220}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.009, y: 0.3899998, z: 0}
+  m_LocalPosition: {x: -0.009, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5278,7 +5266,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5291,7 +5279,7 @@ Transform:
   m_GameObject: {fileID: 1156110003}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5355,7 +5343,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5368,7 +5356,7 @@ Transform:
   m_GameObject: {fileID: 1167154894}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5876,11 +5864,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292751698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73e6adb4ada8af4c944bbdfabbe90e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4125dfb7808894797be73266aed14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  target: {fileID: 1292751699}
+  target: {fileID: 0}
   status: 0
 --- !u!50 &1292751704
 Rigidbody2D:
@@ -6069,7 +6057,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1341827577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -6574,9 +6562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &1425853593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6751,9 +6736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &1438604267
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7309,7 +7291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584793827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -7505,7 +7487,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1642040123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -7751,7 +7733,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1677383269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690f12dc89559764dba63180ff219178, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b7f1b2e4ce4cf4459730b65c7cb01ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employees:
@@ -7788,7 +7770,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7801,7 +7783,7 @@ Transform:
   m_GameObject: {fileID: 1686697496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8016,11 +7998,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690221788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e73e6adb4ada8af4c944bbdfabbe90e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b4125dfb7808894797be73266aed14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  target: {fileID: 1690221789}
+  target: {fileID: 0}
   status: 0
 --- !u!50 &1690221794
 Rigidbody2D:
@@ -8176,7 +8158,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8189,7 +8171,7 @@ Transform:
   m_GameObject: {fileID: 1717037359}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8370,7 +8352,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8383,7 +8365,7 @@ Transform:
   m_GameObject: {fileID: 1823011413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8480,7 +8462,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1829524403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -8643,7 +8625,7 @@ GameObject:
   m_Layer: 0
   m_Name: FoodPos(0)
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8656,7 +8638,7 @@ Transform:
   m_GameObject: {fileID: 1853891345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 1.0400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8954,9 +8936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!114 &2019989730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9235,7 +9214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2038849988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -9649,9 +9628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  employee: {fileID: 0}
-  storeManager: {fileID: 1677383270}
-  navPoint: {fileID: 0}
 --- !u!61 &2077971052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9823,7 +9799,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090727364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
@@ -10386,7 +10362,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2146348943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00fd343f6d7d444a86ba7f67b2e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: b47cc64ff310bf84a8d3ff934a0fad08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   employee: {fileID: 0}
