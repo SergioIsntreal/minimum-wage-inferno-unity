@@ -76,3 +76,13 @@ With David's help, the Employees now have their state's changed when they walk t
 I'm beyond grateful for the assistance, we ran into multiple roadblocks due to the nature of having the table script attached to a navPoint rather than the table itself. There was also a buy where the box colliders on the employees were interacting with the wrong tables, so David devised a system where when the EmployeeManager assigns someone to a table, it will only register if that specified employee interacts. A lot of these register checks are done with the use of different layers.
 
 I want to understand it all better, so I'll take another look at the code tomorrow, since I'll need to export it to my PC and rewire the scripts to the correct nodes.
+
+## DL8 (07/01/26) Customer Randomisation + Starting Behaviour
+Using the customer spawn randomiser and the random food generator, I managed to create a rough script that randomises which customer prefab spawns. It may be able to be simplified by using IEnumerate, will need further guidance.
+In other news, I've added box colliders to the customer prefabs and the chairs. I'm hoping that when the two collide, it will change the seat from 'empty' to 'occupied'. The customer's status does not need to change. Following this, if the list of available seats are all occupied, the CustomerSpawner will temporarily halt spawning new customers. 
+
+For now, for the sake of convenience, I'll be doing all programming on my pc, as I've had issues with github lately. 
+
+May need to rebake the navMesh, as if the customers require a rigidbody 2D, then I'll need to include the seating area as walkable for them.
+Also important; look up how they make those 'E to interact' loading circles. ALSO also, when a customer reaches the seat, begin a patience countdown.
+Excited to see what I can brute force by reverse-engineering the code.
