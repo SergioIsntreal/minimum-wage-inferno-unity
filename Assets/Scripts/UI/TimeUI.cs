@@ -20,13 +20,14 @@ public class TimeUI : MonoBehaviour
         TimeManager.OnHourChanged -= UpdateTime;
     }
 
-    private void UpdateTime()
+    public void UpdateTime()
     {
         timeText.text = $"{TimeManager.Hour:00}:{TimeManager.Minute:00}";
 
         if (TimeManager.Hour >= 18)
         {
             timeText.text = $"Closed";
+            Debug.Log("Flame & Fork is now Closed!");
         }
     }
 }

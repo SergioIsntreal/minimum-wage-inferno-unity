@@ -10,15 +10,29 @@ public enum ChairStatus
 
 public class Chair : MonoBehaviour
 {
+    public ChairStatus status;
+    private Color empty = Color.gray;
+    private Color occupied = Color.cyan;
+    private Collider2D col;
+    private SpriteRenderer sr;
+    private CustomerBehaviour customerBehaviour;
 
     void Start()
     {
-    //    Chair = ChairStatus.Empty;
+        col = GetComponent<Collider2D>();
+        if (status == ChairStatus.Occupied) { sr.color = occupied; }
+        if (status == ChairStatus.Empty) { sr.color = empty; }
+
     }
 
-
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
+        if (status == ChairStatus.Empty)
+        {
+            collision.GetComponent<CustomerBehaviour>().cstatus = CustomerStatus.Sitting;
+        }
+
     }
 }
+    // Current mission; have the customers move to the seats when spawned in, then change the chairs status

@@ -12,9 +12,7 @@ public enum Status
 
 public class EmployeeMovement : MonoBehaviour
 {
-
-    public int moveSpeed;
-    [SerializeField] public Transform target;
+    [HideInInspector] public Transform target;
     [SerializeField] public Status status;
 
     NavMeshAgent agent;
@@ -33,5 +31,8 @@ public class EmployeeMovement : MonoBehaviour
     {
         agent.SetDestination(target.position);
     
+        // May want to adjust the 'Order in Layer' as their Y position changes, so that they aren't
+        // incorrectly clipping through objects
+        // OR. If they're a prefab, I notice there are Layer Override settings...
     }
 }
