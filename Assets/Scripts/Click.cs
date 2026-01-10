@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Click : MonoBehaviour
 {
-    [SerializeField] EmployeeMovement employee;
+    [HideInInspector] EmployeeMovement employee;
     [SerializeField] StoreManager storeManager;
     [HideInInspector] public Transform navPoint;
 

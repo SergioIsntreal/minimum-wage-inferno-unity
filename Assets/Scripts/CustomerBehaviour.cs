@@ -16,7 +16,6 @@ public enum CustomerStatus
 public class CustomerBehaviour : MonoBehaviour
 {
     [SerializeField] public CustomerStatus cstatus;
-    [HideInInspector] public ChairStatus status;
     NavMeshAgent agent;
     public float moveSpeed = 2f;
     private Chair chair;

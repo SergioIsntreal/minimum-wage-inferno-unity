@@ -631,7 +631,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6386661158711522484}
-  m_Layer: 0
+  - component: {fileID: 2651609024740657446}
+  - component: {fileID: 5109294574779309321}
+  m_Layer: 3
   m_Name: Food4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +649,7 @@ Transform:
   m_GameObject: {fileID: 8397253009665415655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4371345, y: -7.4488454, z: 0}
+  m_LocalPosition: {x: 1.28, y: 3.886856, z: 0}
   m_LocalScale: {x: 1, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -660,6 +662,63 @@ Transform:
   - {fileID: 3403645362404497774}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2651609024740657446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397253009665415655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f873655560ac64648b329bb8fe556ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  releaseLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  snapBack: 0
+  movingBack: 0
+  snapBackSpeed: 0
+  orderIndex: 3
+--- !u!58 &5109294574779309321
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397253009665415655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &8609059990962908077
 GameObject:
   m_ObjectHideFlags: 0
