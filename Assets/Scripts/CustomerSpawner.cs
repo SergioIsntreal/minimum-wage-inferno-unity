@@ -8,8 +8,6 @@ public class CustomerSpawner : MonoBehaviour
     public GameObject chosenCustomer;
     public GameObject[] shuffleCustomers;
 
-    [HideInInspector] TimeUI time;
-
     [SerializeField] float spawnCountdown;
     [SerializeField] float timeToSpawn;
     
@@ -29,14 +27,6 @@ public class CustomerSpawner : MonoBehaviour
             Spawn();
             customer = chosenCustomer;
             spawnCountdown = timeToSpawn;
-
-            if (TimeManager.Hour >= 18)
-            {
-                spawnCountdown = 0;
-                timeToSpawn = 0;
-                return;
-            }
-
             // Unsure how to control WHERE these are spawning folder-wise - or if it matters at all
         }
 
@@ -45,11 +35,19 @@ public class CustomerSpawner : MonoBehaviour
     void Spawn()
     {
         timeToSpawn = (Random.Range (6f, 18f));
-        Instantiate(customer, transform.position, transform.rotation);
+        
+        if (TimeManager.Hour >= 18 && TimeManager.Minute >= 0)
+            {
+                timeToSpawn = 0;
+                return;
+            }
+        else
+        {
+            Instantiate(customer, transform.position, transform.rotation);
+        }
         
         int index = Random.Range(0, shuffleCustomers.Length);
         chosenCustomer = shuffleCustomers[index];
-        
     }
 
 }

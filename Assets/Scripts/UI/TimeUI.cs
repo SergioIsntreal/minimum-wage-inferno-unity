@@ -22,11 +22,11 @@ public class TimeUI : MonoBehaviour
 
     public void UpdateTime()
     {
-        timeText.text = $"{TimeManager.Hour:00}:{TimeManager.Minute:00}";
+        timeText.text = $"Open \r\n {TimeManager.Hour:00}:{TimeManager.Minute:00}";
 
-        if (TimeManager.Hour >= 18)
+        if (TimeManager.Hour >= 18 && TimeManager.Minute >= 0)
         {
-            timeText.text = $"Closed";
+            timeText.text = $"Closed \r\n 18:00";
             Debug.Log("Flame & Fork is now Closed!");
         }
     }
