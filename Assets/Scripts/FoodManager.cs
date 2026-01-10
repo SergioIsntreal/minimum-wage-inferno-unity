@@ -19,4 +19,9 @@ public class FoodManager : MonoBehaviour
         Instantiate(menu[index], table.transform.parent.GetChild(1).transform.position, Quaternion.identity);
         table.orderIndex = index;
     }
+
+    public void MakeFood(FoodStation foodStation)
+    {
+        Instantiate(GetComponent<FoodStation>().dish, foodStation.transform.position, Quaternion.identity);
+    }
 }

@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ChairStatus
-{
-    Empty,
-    Occupied
-}
-
 public class Chair : MonoBehaviour
 {
-    public ChairStatus status;
-    private Color empty = Color.gray;
-    private Color occupied = Color.blue;
+    public bool chairOccupied = false;
     private Collider2D col;
     private SpriteRenderer sr;
     private CustomerBehaviour customerBehaviour;
@@ -20,15 +12,21 @@ public class Chair : MonoBehaviour
 
     private void Start()
     {
-        status = ChairStatus.Empty;
+        chairOccupied = false;
     }
 
     void Update()
     {
         col = GetComponent<Collider2D>();
         sr = transform.GetComponent<SpriteRenderer>();
-        if (status == ChairStatus.Empty) { sr.color = empty; }
-        if (status == ChairStatus.Occupied) { sr.color = occupied; }
+        if(chairOccupied == true)
+        {
+            sr.color = Color.blue;
+        }
+        if (chairOccupied == false)
+        {
+            sr.color = Color.grey;
+        }
         customerBehaviour = FindAnyObjectByType<CustomerBehaviour>();
         navPoint = transform; 
     }
@@ -37,19 +35,17 @@ public class Chair : MonoBehaviour
     {
         if (collision)
         {
-            status = ChairStatus.Occupied;
+            chairOccupied = true;
         }
-        // When the customer leaves the collision area, reset to empty
+        
         // Currently turns chairs from blue to grey, just need to set the chair as the target position
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        status = ChairStatus.Empty;
+        chairOccupied = false;
     }
 
-
-    // Above doesn't work; still editing it
-
+    // Chair is a bool, Table is not, because it has 3 states, not 2
     // Current mission; have the customers move to the seats when spawned in, then change the chairs status
 }
