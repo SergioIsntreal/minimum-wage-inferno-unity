@@ -18,7 +18,7 @@ public class Table : MonoBehaviour
     private Color occupied = Color.red;
     private Color dirty = Color.green;
     private SpriteRenderer sr;
-    private FoodManager foodManager;
+    public FoodManager foodManager;
     [HideInInspector] public int orderIndex;
 
     void Start()
@@ -52,16 +52,17 @@ public class Table : MonoBehaviour
                 collision.GetComponent<EmployeeMovement>().status = Status.Busy;
                 Debug.Log("Busy");
 
-                StartCoroutine(Order());
+                StartCoroutine(Order());  
             }
-
         }
     }
 
     IEnumerator Order()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         Debug.Log("Order");
         foodManager.ShowOrder(this);
+        yield return new WaitForSeconds(5f);
+        GetComponent<EmployeeMovement>().status = Status.Idle;
     }
 }
