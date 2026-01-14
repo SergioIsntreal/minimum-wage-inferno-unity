@@ -96,3 +96,5 @@ I haven't updated as religiously this week. To summarise what changes have been 
 I won't be able to make anymore changes before the PMP submission, and even after I need to catch up on my dissertation. But the main priorities after that will be getting the level to properly run. This means editing the customer behaviour so they actually walk to the chairs, changing the food stations so that they spawn food, and adjusting the employees so that they can interact with the food stations.
 
 Furthermore, I may need to dedicate more time to the art of the game. Concept art for characters is minimal as of now, and needs to be strengthened.
+
+[ BUG IDENTIFIED - Timer does not appear on the build. ]
