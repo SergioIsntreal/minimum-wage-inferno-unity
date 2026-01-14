@@ -86,3 +86,13 @@ For now, for the sake of convenience, I'll be doing all programming on my pc, as
 May need to rebake the navMesh, as if the customers require a rigidbody 2D, then I'll need to include the seating area as walkable for them.
 Also important; look up how they make those 'E to interact' loading circles. ALSO also, when a customer reaches the seat, begin a patience countdown.
 Excited to see what I can brute force by reverse-engineering the code.
+
+## DL9 (14/01/26) General Summary
+I haven't updated as religiously this week. To summarise what changes have been made:
+- The waiting chairs now turn blue when occupied
+- The game has a rough main menu
+- The game has a visual novel scene that lacks any code as of now
+
+I won't be able to make anymore changes before the PMP submission, and even after I need to catch up on my dissertation. But the main priorities after that will be getting the level to properly run. This means editing the customer behaviour so they actually walk to the chairs, changing the food stations so that they spawn food, and adjusting the employees so that they can interact with the food stations.
+
+Furthermore, I may need to dedicate more time to the art of the game. Concept art for characters is minimal as of now, and needs to be strengthened.
