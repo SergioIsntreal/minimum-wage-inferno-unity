@@ -8,6 +8,14 @@ TagManager:
   - Walkable
   - Employee
   - Customer
+  - Main Menu Buttons
+  - Botis
+  - Forcas
+  - Furcifer
+  - Latarso
+  - Marchosias
+  - Orias
+  - Raum
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c18b3ca459af3734d856e458404c2487
   - enabled: 1
+    path: Assets/Scenes/IntroductionCS.unity
+    guid: c292322e39c75914ba2def83e8881e23
+  - enabled: 1
     path: Assets/Scenes/GameLevel1.unity
     guid: 45b2afe6bec92784981b52b3408ca041
+  - enabled: 1
+    path: Assets/Scenes/Gallery.unity
+    guid: e87c60e844e61cd4caa2ec14d54ff052
+  - enabled: 1
+    path: Assets/Scenes/IndividualGalleriesa/BotisGallery.unity
+    guid: 69b4d694819001c4f82103e45806d811
   m_configObjects: {}

@@ -28,6 +28,7 @@ public class TimeUI : MonoBehaviour
         {
             timeText.text = $"Closed \r\n 18:00";
             Debug.Log("Flame & Fork is now Closed!");
+            return;
         }
     }
 }
