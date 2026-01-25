@@ -38,8 +38,6 @@ public class TimeManager : MonoBehaviour
                 Hour++;
                 Minute = 0;
                 OnHourChanged?.Invoke();
-
-
             }
 
             timer = minuteToRealTime;
