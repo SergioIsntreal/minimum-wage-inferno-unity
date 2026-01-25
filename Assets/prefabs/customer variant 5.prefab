@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2646629497953938164}
   - component: {fileID: 3401428746261442973}
-  - component: {fileID: 2648259608847877811}
   - component: {fileID: 4791550513193108704}
   - component: {fileID: 3759216697485375189}
   - component: {fileID: 3178582999839671174}
+  - component: {fileID: 2785636943519066209}
   m_Layer: 7
   m_Name: customer variant 5
   m_TagString: Customer
@@ -88,21 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2648259608847877811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218026470869903367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 458b4b1919f8bed4e9ba2d3653c4d5dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cstatus: 0
-  chair: {fileID: 0}
-  moveSpeed: 2
 --- !u!61 &4791550513193108704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -197,3 +182,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2785636943519066209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218026470869903367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95bdf45cff9d504d9d11a4f28e3393b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

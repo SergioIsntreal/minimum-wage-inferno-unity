@@ -122,6 +122,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7435286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7435287}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7435287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7435286}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 752992903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &11148324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -792,6 +823,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1182462929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &101957310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101957311}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &101957311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101957310}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1242820690}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &107502322
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +886,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: 3, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 274369168}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &107502324
@@ -907,8 +970,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &107502327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -986,7 +1054,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: -1.3999999, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1083795615}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &117389742
@@ -1069,8 +1138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &117389745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1116,6 +1190,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &118783633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118783634}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118783634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118783633}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311780802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173115053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,7 +1627,7 @@ MonoBehaviour:
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 65b1f5a3695734446bfacfec282d1ea8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 295fb8dd32c1774408a3a82b85b55912, type: 2}
 --- !u!4 &200547311
 Transform:
   m_ObjectHideFlags: 0
@@ -1615,6 +1720,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
+--- !u!1 &229258943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229258945}
+  - component: {fileID: 229258944}
+  m_Layer: 0
+  m_Name: ExitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &229258944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229258943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed63e2c308e92c458298036ad67160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitPoint: {fileID: 2021625753}
+--- !u!4 &229258945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229258943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.2689285, y: 4.64457, z: -0.016062915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &248039618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +1859,37 @@ MonoBehaviour:
   employeeName: 
   foodManager: {fileID: 0}
   orderIndex: 0
+--- !u!1 &274369167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274369168}
+  m_Layer: 0
+  m_Name: ChairNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &274369168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274369167}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 107502323}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288459866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2453,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &453827816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453827817}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453827817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453827816}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2040872500}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487593608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,17 +2769,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536e3774f684f2d4db563a731b6b1dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customer: {fileID: 1218026470869903367, guid: 3e87b068a4f4bed4388bddf272511b3f, type: 3}
-  chosenCustomer: {fileID: 0}
-  shuffleCustomers:
-  - {fileID: 8572487096110694956, guid: 45751710731b121408534967e7a7c055, type: 3}
-  - {fileID: 2523098146192338207, guid: 6f337e81162ce0b4d8ff7ff0bee72ad5, type: 3}
-  - {fileID: 6305722915387765231, guid: 77da2e73dc988fe409b4dc465a8ca36b, type: 3}
-  - {fileID: 4562677253476581737, guid: ddd0ce228fa0fb8459c82ca0b38af91a, type: 3}
-  - {fileID: 6559725982120475231, guid: 3f4f5b3a86987464b94b4a5c926ba086, type: 3}
-  - {fileID: 1218026470869903367, guid: 3e87b068a4f4bed4388bddf272511b3f, type: 3}
-  spawnCountdown: 0
-  timeToSpawn: 1
+  customerPrefabs:
+  - prefab: {fileID: 8572487096110694956, guid: 45751710731b121408534967e7a7c055, type: 3}
+    spawnChance: 0
+  - prefab: {fileID: 2523098146192338207, guid: 6f337e81162ce0b4d8ff7ff0bee72ad5, type: 3}
+    spawnChance: 0
+  - prefab: {fileID: 6305722915387765231, guid: 77da2e73dc988fe409b4dc465a8ca36b, type: 3}
+    spawnChance: 0
+  - prefab: {fileID: 4562677253476581737, guid: ddd0ce228fa0fb8459c82ca0b38af91a, type: 3}
+    spawnChance: 0
+  - prefab: {fileID: 6559725982120475231, guid: 3f4f5b3a86987464b94b4a5c926ba086, type: 3}
+    spawnChance: 0
+  - prefab: {fileID: 1218026470869903367, guid: 3e87b068a4f4bed4388bddf272511b3f, type: 3}
+    spawnChance: 0
+  spawnPoint: {fileID: 2021625753}
+  maxNPCs: 18
+  minSpawnDelay: 8
+  maxSpawnDelay: 18
+  cafeOpen: 1
+--- !u!1 &510420419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510420421}
+  - component: {fileID: 510420420}
+  m_Layer: 0
+  m_Name: ChairManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &510420420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510420419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82783e2ec9f42e743a4d0c8824d2021f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allChairs: []
+--- !u!4 &510420421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510420419}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.492505, y: 1.9409473, z: 283.91235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521441231
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,6 +3584,37 @@ Transform:
   - {fileID: 1182462929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &708431409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708431410}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708431410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708431409}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1697651022}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &726976542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3554,7 +3849,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: 0.8000001, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7435287}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &752992904
@@ -3637,8 +3933,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &752992907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4487,6 +4788,37 @@ Transform:
   - {fileID: 2112202795}
   m_Father: {fileID: 683724420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083795614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083795615}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083795615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083795614}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 117389741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1093397107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4988,7 +5320,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: -0.29999995, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1683846891}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1233014935
@@ -5071,8 +5404,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &1233014938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5150,7 +5488,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: -2.5, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 101957311}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1242820691
@@ -5233,8 +5572,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &1242820694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5508,7 +5852,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: -4.7, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 118783634}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1311780803
@@ -5591,8 +5936,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &1311780806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7105,6 +7455,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1683846890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683846891}
+  m_Layer: 0
+  m_Name: SeatNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1683846891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683846890}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1233014934}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686697496
 GameObject:
   m_ObjectHideFlags: 0
@@ -7410,7 +7791,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: -3.6000001, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 708431410}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1697651023
@@ -7493,8 +7875,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &1697651026
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8426,7 +8813,7 @@ GameObject:
   - component: {fileID: 2021625754}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8729,7 +9116,8 @@ Transform:
   m_LocalPosition: {x: -6.75, y: 1.9000001, z: -0.037535768}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 453827817}
   m_Father: {fileID: 1034504275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2040872501
@@ -8812,8 +9200,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5087957b8e46c374694a100584d94371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chairOccupied: 0
-  navPoint: {fileID: 0}
+  sitPosition: {fileID: 0}
+  isOccupied: 0
+  isReserved: 0
+  chairRenderer: {fileID: 0}
+  emptyColor: {r: 0, g: 1, b: 0, a: 1}
+  occupiedColor: {r: 1, g: 0, b: 0, a: 1}
+  reservedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!61 &2040872504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9989,3 +10382,5 @@ SceneRoots:
   - {fileID: 634636404}
   - {fileID: 611061241}
   - {fileID: 1782736858}
+  - {fileID: 510420421}
+  - {fileID: 229258945}
