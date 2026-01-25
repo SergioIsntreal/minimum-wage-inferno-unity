@@ -16,6 +16,7 @@ TagManager:
   - Marchosias
   - Orias
   - Raum
+  - Exit
   layers:
   - Default
   - TransparentFX

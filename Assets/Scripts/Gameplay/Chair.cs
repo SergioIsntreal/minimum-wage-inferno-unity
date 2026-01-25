@@ -4,48 +4,104 @@ using UnityEngine;
 
 public class Chair : MonoBehaviour
 {
-    public bool chairOccupied = false;
-    private Collider2D col;
-    private SpriteRenderer sr;
-    private CustomerBehaviour customerBehaviour;
-    [HideInInspector] public Transform navPoint;
+    [Header("Sit Position")]
+    [SerializeField] private Transform sitPosition; //Child nodes
+    private string sitPositionChildName = "SitPosition";
 
-    private void Start()
-    {
-        chairOccupied = false;
-    }
+    [Header("Other")]
+    [SerializeField] private bool isOccupied = false;
+    [SerializeField] private bool isReserved = false;
+    //Visual Indicator Script
+    [SerializeField] private SpriteRenderer chairRenderer;
+    [SerializeField] private Color emptyColor = Color.green;
+    [SerializeField] private Color occupiedColor = Color.red;
+    [SerializeField] private Color reservedColor = Color.yellow;
+    //Reference to the customer using the chair
+    private NPCController currentNPC;
 
-    void Update()
+    void Start()
     {
-        col = GetComponent<Collider2D>();
-        sr = transform.GetComponent<SpriteRenderer>();
-        if(chairOccupied == true)
+        if (sitPosition == null)
         {
-            sr.color = Color.blue;
+            FindSitPosition();
         }
-        if (chairOccupied == false)
+
+        //Fallback to chair's transform if it's still null
+        if (sitPosition == null)
         {
-            sr.color = Color.grey;
+            sitPosition = transform;
+            Debug.LogWarning($"No sit position found for chait {name}. Using chair position.");
         }
-        customerBehaviour = FindAnyObjectByType<CustomerBehaviour>();
-        navPoint = transform; 
+
+        UpdateVisual();
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    void FindSitPosition()
     {
-        if (collision)
+        foreach (Transform child in transform)
         {
-            chairOccupied = true;
+            if (child.name.Contains("SeatNode"))
+            {
+                sitPosition = child;
+                return;
+            }
         }
-        
-        // Currently turns chairs from blue to grey, just need to set the chair as the target position
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    public bool IsOccupied => isOccupied;
+    public bool IsReserved => isReserved;
+    public bool IsAvailable => !isOccupied && !isReserved;
+    public Transform SitPosition => sitPosition;
+
+    public void ReserveChair()
     {
-        chairOccupied = false;
+        if (!isOccupied)
+        {
+            isReserved = true;
+            UpdateVisual();
+        }
     }
 
-    // Chair is a bool, Table is not, because it has 3 states, not 2
-    // Current mission; have the customers move to the seats when spawned in, then change the chairs status
+    public void OccupyChair(NPCController npc)
+    {
+        isOccupied = true;
+        isReserved = false;
+        currentNPC = npc;
+        UpdateVisual();
+    }
+
+    public void VacateChair()
+    {
+        isOccupied = false;
+        isReserved = false;
+        currentNPC = null;
+        UpdateVisual();
+    }
+
+    void UpdateVisual()
+    {
+        if (chairRenderer != null)
+        {
+            if (isOccupied)
+                chairRenderer.color = occupiedColor;
+            else if (isReserved)
+                chairRenderer.color = reservedColor;
+            else
+                chairRenderer.color = emptyColor;
+        }
+    }
+
+    // Draw gizmo for easy editing
+    void OnDrawGizmos()
+    {
+        Gizmos.color = IsAvailable ? Color.green :
+                      (IsReserved ? Color.yellow : Color.red);
+        Gizmos.DrawWireCube(transform.position, new Vector3(1, 1, 0.1f));
+
+        if (sitPosition != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawSphere(sitPosition.position, 0.1f);
+        }
+    }
 }
