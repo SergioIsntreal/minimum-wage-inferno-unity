@@ -98,3 +98,6 @@ I won't be able to make anymore changes before the PMP submission, and even afte
 Furthermore, I may need to dedicate more time to the art of the game. Concept art for characters is minimal as of now, and needs to be strengthened.
 
 [ BUG IDENTIFIED - Timer does not appear on the build. ]
+
+## DL10 (25/01/26) Issue Encountered
+For some reason, ever since I exported a build of the project, the TimeManager and TimeUI scripts are not functioning as they should. When running, the countdown is frozen, and spamming the pause button makes it go down incrementally. I have no idea what is causing this, if it's an issue specific to Unity 2022 or what. But in essence, it rendered my hours of AI coding useless (even if I coulda copy and pasted everything).
