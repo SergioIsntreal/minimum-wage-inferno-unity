@@ -30,7 +30,7 @@ public class Chair : MonoBehaviour
         if (sitPosition == null)
         {
             sitPosition = transform;
-            Debug.LogWarning($"No sit position found for chait {name}. Using chair position.");
+            Debug.LogWarning($"No sit position found for chair {name}. Using chair position.");
         }
 
         UpdateVisual();
@@ -40,7 +40,7 @@ public class Chair : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            if (child.name.Contains("SeatNode"))
+            if (child.name.Contains("Seat"))
             {
                 sitPosition = child;
                 return;

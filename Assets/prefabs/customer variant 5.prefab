@@ -194,3 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95bdf45cff9d504d9d11a4f28e3393b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrivalThreshold: 0.1
+  sitPatience: 12
+  npcRenderer: {fileID: 0}
+  walkingColor: {r: 1, g: 1, b: 1, a: 1}
+  sittingColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  shouldLeaveAfterSitting: 1
+  destroyDelay: 1

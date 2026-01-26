@@ -11,20 +11,22 @@ public class NPCController : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private float arrivalThreshold = 0.1f;
-    [SerializeField] private float sitPatience = 5f;
+    [SerializeField] private float sitPatience = 12f;
     private float sitTimer = 0f;
     private bool isSitting = false;
 
     [Header("Visual")]
     [SerializeField] private SpriteRenderer npcRenderer;
     [SerializeField] private Color walkingColor = Color.white;
-    [SerializeField] private Color sittingColor = Color.gray;
+    [SerializeField] private Color sittingColor = Color.cyan;
 
     [Header("Exit Settings")]
     [SerializeField] private bool shouldLeaveAfterSitting = true;
     [SerializeField] private float destroyDelay = 1f;
     private bool isLeaving = false;
     private Transform exitPoint;
+
+    [HideInInspector] CustomerSpawner spawner;
 
     void Start()
     {
@@ -201,6 +203,7 @@ public class NPCController : MonoBehaviour
         {
             agent.isStopped = false;
             agent.SetDestination(exitPoint.position);
+            spawner.OnNPCLeft();
 
             //Update visual for leaving state
             if (npcRenderer != null)

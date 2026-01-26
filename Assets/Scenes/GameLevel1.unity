@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 7435286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -848,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 101957310}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1215,7 +1215,7 @@ Transform:
   m_GameObject: {fileID: 118783633}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1869,7 +1869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274369168}
   m_Layer: 0
-  m_Name: ChairNode
+  m_Name: SeatNode
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1884,7 +1884,7 @@ Transform:
   m_GameObject: {fileID: 274369167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2478,7 +2478,7 @@ Transform:
   m_GameObject: {fileID: 453827816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2771,17 +2771,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerPrefabs:
   - prefab: {fileID: 8572487096110694956, guid: 45751710731b121408534967e7a7c055, type: 3}
-    spawnChance: 0
+    spawnChance: 2
   - prefab: {fileID: 2523098146192338207, guid: 6f337e81162ce0b4d8ff7ff0bee72ad5, type: 3}
-    spawnChance: 0
+    spawnChance: 2
   - prefab: {fileID: 6305722915387765231, guid: 77da2e73dc988fe409b4dc465a8ca36b, type: 3}
-    spawnChance: 0
+    spawnChance: 2
   - prefab: {fileID: 4562677253476581737, guid: ddd0ce228fa0fb8459c82ca0b38af91a, type: 3}
-    spawnChance: 0
+    spawnChance: 2
   - prefab: {fileID: 6559725982120475231, guid: 3f4f5b3a86987464b94b4a5c926ba086, type: 3}
-    spawnChance: 0
+    spawnChance: 2
   - prefab: {fileID: 1218026470869903367, guid: 3e87b068a4f4bed4388bddf272511b3f, type: 3}
-    spawnChance: 0
+    spawnChance: 2
   spawnPoint: {fileID: 2021625753}
   maxNPCs: 18
   minSpawnDelay: 8
@@ -3609,7 +3609,7 @@ Transform:
   m_GameObject: {fileID: 708431409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4813,7 +4813,7 @@ Transform:
   m_GameObject: {fileID: 1083795614}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7480,7 +7480,7 @@ Transform:
   m_GameObject: {fileID: 1683846890}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
