@@ -12,7 +12,7 @@ public enum Status
 
 public class EmployeeMovement : MonoBehaviour
 {
-    [HideInInspector] public Transform target;
+    [SerializeField] public Transform target;
     [SerializeField] public Status status;
 
     NavMeshAgent agent;
@@ -23,13 +23,18 @@ public class EmployeeMovement : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
-        target.position = transform.position;
+        // TODO: Target is never set to the employee upon initialisation (on start)
+        if(target) target.position = transform.position;
     }
 
     
     void Update()
     {
-        agent.SetDestination(target.position);
+        // Checking if the agent currently has a target to move towards
+        if (target)
+        {
+            agent.SetDestination(target.position);
+        }
     
         // May want to adjust the 'Order in Layer' as their Y position changes, so that they aren't
         // incorrectly clipping through objects
